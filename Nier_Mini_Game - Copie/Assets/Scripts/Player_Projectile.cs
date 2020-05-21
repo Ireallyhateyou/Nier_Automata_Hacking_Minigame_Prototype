@@ -12,6 +12,8 @@ public class Player_Projectile : MonoBehaviour
     private bool RightBumperpressed;
     public float Time_Between_Shots = 0.3333f;
     private float timestamp;
+    public AudioClip shootsound;
+    public AudioSource main;
     private void Awake() {
         Controls = new InputMaster();
 
@@ -32,6 +34,7 @@ public class Player_Projectile : MonoBehaviour
         {
             Rigidbody Projectile = Instantiate(RightProjectile, transform.position, transform.rotation);
             Projectile.velocity = transform.forward * RightProjectileSpeed;
+            main.PlayOneShot(shootsound, 1);
             timestamp = Time.time + Time_Between_Shots;
         }
     }

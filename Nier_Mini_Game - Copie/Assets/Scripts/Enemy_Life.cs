@@ -6,7 +6,8 @@ using Unity.Audio;
 public class Enemy_Life : MonoBehaviour
 {
     public int Life = 3;
-    public AudioSource DeathSound;
+    public GameObject DeathSound;
+    public GameObject Weak_ShockWave;
     public AudioSource HitSound;
 
 
@@ -23,10 +24,11 @@ public class Enemy_Life : MonoBehaviour
         {
             Life -= 1;
             HitSound.Play();
+            Instantiate(Weak_ShockWave , transform.position, transform.rotation);
         }
     }
     private void OnDestroy() {
-        Debug.Log("fff");
+        Instantiate(DeathSound, transform.position, transform.rotation);
 
     }
 
