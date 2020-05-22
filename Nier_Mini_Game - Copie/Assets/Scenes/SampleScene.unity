@@ -5634,7 +5634,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 733946566}
-  m_LocalRotation: {x: 0.5311337, y: 0.000000016299815, z: -0.000000010218012, w: 0.8472881}
+  m_LocalRotation: {x: 0.5311337, y: -0.000000016299284, z: 0.000000010217163, w: 0.8472881}
   m_LocalPosition: {x: 0, y: 54.46812, z: -26.0098}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -10798,7 +10798,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1166181291}
-  m_LocalRotation: {x: 0.5311337, y: 0.000000016299815, z: -0.000000010218012, w: 0.8472881}
+  m_LocalRotation: {x: 0.5311337, y: -0.000000016299284, z: 0.000000010217163, w: 0.8472881}
   m_LocalPosition: {x: 0, y: 54.46812, z: -26.0098}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -10843,7 +10843,7 @@ ParticleSystemRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 735943a4330ab1b4ca010aad9ff9c734, type: 2}
+  - {fileID: 2100000, guid: 34bb0448757f2434aa915171027401d2, type: 2}
   - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
@@ -15846,7 +15846,7 @@ Transform:
   m_GameObject: {fileID: 1699956842}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: -86.56972, y: -0.008656972, z: -86.56972}
+  m_LocalScale: {x: -86.56972, y: 1, z: -86.56972}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -16335,7 +16335,7 @@ ParticleSystem:
   cullingMode: 0
   ringBufferMode: 0
   ringBufferLoopRange: {x: 0, y: 1}
-  looping: 0
+  looping: 1
   prewarm: 0
   playOnAwake: 1
   useUnscaledTime: 0

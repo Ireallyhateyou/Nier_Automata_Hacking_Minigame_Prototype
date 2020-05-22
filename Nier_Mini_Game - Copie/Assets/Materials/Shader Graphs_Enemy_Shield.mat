@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Shader Graphs_Enemy_Death_Explosion_part2
+  m_Name: Shader Graphs_Enemy_Shield
   m_Shader: {fileID: -6465566751694194690, guid: 35e6ee5b24ac74549acd3d8d902804bc,
     type: 3}
   m_ShaderKeywords: 
