@@ -40,7 +40,6 @@ public class Simple_Enemy_Projectile : MonoBehaviour
 
     void Shoot_Orange()
     {
-        Debug.Log("orange");
         Rigidbody Projectile = Instantiate(OrangeProjectile, transform.position, transform.rotation);
         Projectile.transform.LookAt(Target);
         Projectile.velocity = transform.forward * ProjectileSpeed;

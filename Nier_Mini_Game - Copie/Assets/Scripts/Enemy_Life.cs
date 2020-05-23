@@ -13,7 +13,7 @@ public class Enemy_Life : MonoBehaviour
 
     void Update()
     {
-        if (Life < 0)
+        if (Life <= 0)
         {
             Destroy(gameObject);
         }

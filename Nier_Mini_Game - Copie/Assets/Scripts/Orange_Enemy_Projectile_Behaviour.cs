@@ -15,13 +15,11 @@ public class Orange_Enemy_Projectile_Behaviour : MonoBehaviour
     private void OnTriggerEnter(Collider collider) {
         if (collider.tag == "Player_Projectile")
         {
-            Debug.Log("Player_Projectile");
             Destroy(gameObject);
         }
 
         if (collider.tag == "Player")
         {
-            Debug.Log("Player");
             Destroy(gameObject);
         }
     }
