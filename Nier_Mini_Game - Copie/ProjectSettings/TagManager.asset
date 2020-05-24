@@ -10,6 +10,8 @@ TagManager:
   - Enemy
   - Purple_Enemy_Projectile
   - Orange_Enemy_Projectile
+  - Stop_Area_For_Enemies
+  - Enemy_Type_2
   layers:
   - Default
   - TransparentFX

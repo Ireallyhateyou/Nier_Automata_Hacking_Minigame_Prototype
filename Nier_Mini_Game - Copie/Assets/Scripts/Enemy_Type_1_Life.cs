@@ -3,11 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using Unity.Audio;
 
-public class Enemy_Life : MonoBehaviour
+public class Enemy_Type_1_Life : MonoBehaviour
 {
     public int Life = 3;
     public GameObject DeathSound;
     public GameObject Weak_ShockWave;
+    public GameObject ExplosionTrail;
+    public GameObject ExplosionCube;
     public AudioSource HitSound;
 
 
@@ -29,6 +31,8 @@ public class Enemy_Life : MonoBehaviour
     }
     private void OnDestroy() {
         Instantiate(DeathSound, transform.position, transform.rotation);
+        Instantiate(ExplosionTrail, transform.position, transform.rotation);
+        Instantiate(ExplosionCube, transform.position, transform.rotation);
 
     }
 

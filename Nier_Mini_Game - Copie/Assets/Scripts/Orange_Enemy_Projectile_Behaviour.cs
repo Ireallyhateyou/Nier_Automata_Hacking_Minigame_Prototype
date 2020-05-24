@@ -6,6 +6,7 @@ public class Orange_Enemy_Projectile_Behaviour : MonoBehaviour
 {
     public float Time_Before_Destruction;
     private void Start() {
+        
         if (gameObject.name != "Orange_Enemy_Projectile")
         {
             Autodestruct();

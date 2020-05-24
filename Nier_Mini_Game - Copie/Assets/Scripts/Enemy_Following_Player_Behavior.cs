@@ -34,18 +34,17 @@ public class Enemy_Following_Player_Behavior : MonoBehaviour
         RotateAmount = Vector3.Cross(transform.forward, Direction);
         RotateAmount = new Vector3(0, RotateAmount.y, 0);
         rb.angularVelocity = RotateAmount * RotationSpeed;
-        Debug.Log(RotateAmount);
         rb.velocity= transform.forward * Speed;
     }
     private void OnTriggerEnter(Collider collider) {
-        if (collider.collider.tag == "Player")
+        if (collider.tag == "Stop_Area_For_Enemies")
         {
             TouchingPlayer = true;
             Debug.Log("touching");
         }
     }
     private void OnTriggerExit(Collider collider) {
-        if (collider.collider.tag == "Player")
+        if (collider.tag == "Stop_Area_For_Enemies")
         {
             TouchingPlayer = false;
             Debug.Log("not touching");
