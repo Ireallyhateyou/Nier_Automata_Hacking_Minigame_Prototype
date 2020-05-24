@@ -33,8 +33,5 @@ public class Enemy_Type_1_Life : MonoBehaviour
         Instantiate(DeathSound, transform.position, transform.rotation);
         Instantiate(ExplosionTrail, transform.position, transform.rotation);
         Instantiate(ExplosionCube, transform.position, transform.rotation);
-
     }
-
- 
 }

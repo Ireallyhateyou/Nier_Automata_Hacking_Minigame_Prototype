@@ -22,6 +22,10 @@ public class Projectile_Behavior : MonoBehaviour
         {
             Destroy(gameObject);
         }
+        if (collider.tag == "Enemy_Shield")
+        {
+            Destroy(gameObject);
+        }
     }
     public void Autodestruct()
     {

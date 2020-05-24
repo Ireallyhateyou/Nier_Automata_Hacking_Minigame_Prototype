@@ -17,7 +17,7 @@ public class Enemy_Ball_Shield : MonoBehaviour
         FollowTarget();
         Enemy = GameObject.FindGameObjectsWithTag("Enemy_Type_2");
         Debug.Log(Enemy.Length);
-        if (Enemy.Length == 0)
+        if (Enemy.Length == 1)
         {
             AutoDestruct();
         }
@@ -30,4 +30,5 @@ public class Enemy_Ball_Shield : MonoBehaviour
     {
         transform.position = Target.transform.position;
     }
+
 }

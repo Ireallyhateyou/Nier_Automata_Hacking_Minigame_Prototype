@@ -12,7 +12,6 @@ public class Enemy_Following_Player_Behavior : MonoBehaviour
     public float RotationSpeed;
     public float Speed;
     private Quaternion Modified_Rotation;
-    public GameObject Stop_Area_Around_Player;
     private bool TouchingPlayer = false;
     private void Start() {
         Modified_Rotation = gameObject.transform.rotation;
