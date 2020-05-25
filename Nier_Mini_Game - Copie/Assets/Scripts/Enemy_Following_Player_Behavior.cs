@@ -13,16 +13,20 @@ public class Enemy_Following_Player_Behavior : MonoBehaviour
     public float Speed;
     private Quaternion Modified_Rotation;
     private bool TouchingPlayer = false;
+    public GameObject[] Enemy;
     private void Start() {
         Modified_Rotation = gameObject.transform.rotation;
     }
     void Update()
     {
-        if (gameObject.name != "Enemy_Type_1" & TouchingPlayer == false)
+        Enemy = GameObject.FindGameObjectsWithTag("Enemy_Type_2");
+        if (gameObject.name != "Enemy_Type_1" & TouchingPlayer == false &  Enemy.Length == 1)
         {
           FollowTarget();
+        }else
+        {
+            transform.LookAt(Target);
         }
-
     }
 
     void FollowTarget()

@@ -11,8 +11,19 @@ public class Simple_Enemy_Projectile : MonoBehaviour
     private bool PurpleShot = false;
     public float Time_Between_Shots = 0.3333f;
     public float ProjectileSpeed;
+    private bool EveryoneIsDead= false;
+    public GameObject[] Enemy;
+    private void Start() {
+        Time_Between_Shots = Random.Range(.9f, 1.1f) * Time_Between_Shots;
+    }
     void Update()
     {
+        Enemy = GameObject.FindGameObjectsWithTag("Enemy_Type_2");
+        if (Enemy.Length == 1 & EveryoneIsDead == false)
+        {
+            Time_Between_Shots = Time_Between_Shots * .5f;
+            EveryoneIsDead = true;
+        }
         if (Time.time >= timestamp)
         {
             if (PurpleShot == false)
