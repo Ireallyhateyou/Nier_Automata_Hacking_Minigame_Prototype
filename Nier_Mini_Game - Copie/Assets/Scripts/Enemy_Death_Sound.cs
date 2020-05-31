@@ -4,12 +4,11 @@ using UnityEngine;
 
 public class Enemy_Death_Sound : MonoBehaviour
 {
-    void Start()
+  void Start()
+  {
+   if (gameObject.name != "Enemy_Death_Sound")
     {
-        if (gameObject.name != "Enemy_Death_Sound")
-        {
-          Destroy(gameObject, 3);  
-        }
-        
-    }
+      Destroy(gameObject, 3);  
+    }      
+  }
 }

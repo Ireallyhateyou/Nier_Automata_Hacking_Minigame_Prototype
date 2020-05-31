@@ -15,7 +15,6 @@ public class Player_Life : MonoBehaviour
         {
             Destroy(gameObject);
         }
-        Debug.Log(Life);
     }
     private void OnTriggerEnter(Collider collider) {        
         if ((collider.tag == "Orange_Enemy_Projectile" | collider.tag == "Purple_Enemy_Projectile") & Time.time >= timestamp)

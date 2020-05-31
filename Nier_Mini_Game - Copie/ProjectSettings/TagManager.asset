@@ -13,6 +13,7 @@ TagManager:
   - Stop_Area_For_Enemies
   - Enemy_Type_2
   - Enemy_Shield
+  - Stage_White_Cube
   layers:
   - Default
   - TransparentFX

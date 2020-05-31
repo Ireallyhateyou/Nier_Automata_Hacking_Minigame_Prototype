@@ -5,6 +5,7 @@ using UnityEngine;
 public class Projectile_Behavior : MonoBehaviour
 {
     public float Time_Before_Destruction;
+    public GameObject Projectile_Surface_Hit;
     private void Start() {
         gameObject.transform.Rotate(0, 0, 45);
     }
@@ -24,6 +25,11 @@ public class Projectile_Behavior : MonoBehaviour
         }
         if (collider.tag == "Enemy_Shield")
         {
+            Destroy(gameObject);
+        }
+        if (collider.tag == "Stage_White_Cube")
+        {
+            Instantiate(Projectile_Surface_Hit, transform.position, transform.rotation);
             Destroy(gameObject);
         }
     }
